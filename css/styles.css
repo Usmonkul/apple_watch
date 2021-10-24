@@ -1,6 +1,5 @@
 :root {
 }
-
 /* GENERAL */
 /* roboto-regular - latin */
 @font-face {
@@ -19,7 +18,6 @@
     url('../fonts/roboto-v29-latin-700.woff') format('woff');
   font-display: swap;
 }
-
 html {
   box-sizing: border-box;
   height: 100%;
@@ -88,6 +86,10 @@ li {
   text-transform: uppercase;
   font-weight: bold;
 }
+.btn:hover {
+  transform: scale(1.1, 1.1);
+}
+/* Header-section */
 .header-section {
   width: 1250px;
   display: flex;
@@ -96,17 +98,12 @@ li {
   padding-top: 30px;
   padding-bottom: 80px;
 }
-.logo-wrapper {
-
-}
 .logo {
   display: flex;
   align-items: center;
 }
 .logo-img {
   display: block;
-}
-.navbar {
 }
 .nav-list {
   display: flex;
@@ -225,7 +222,6 @@ li {
 .info-content {
   margin-right: 110px;
   margin-top: 106px;
-
 }
 .info-heading {
   margin: 0;
@@ -241,8 +237,6 @@ li {
   color: #777;
   margin-bottom: 30px;
   width: 490px;
-}
-.btn {
 }
 .info-btn {
   padding-left: 90px;
@@ -264,6 +258,17 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .extra-feature {
+    background:url('../img/runners@2x.png') no-repeat;
+  }
+}
 .extra-info-content {
   width: 490px;
 }
@@ -278,6 +283,4 @@ li {
   color: #fff;
   width: 490px;
   border-left: 3px solid #FFF;
-}
-.extra-feature-btn {
 }
