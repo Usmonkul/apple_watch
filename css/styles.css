@@ -116,10 +116,13 @@ li {
 .nav-link {
   color: #333;
 }
-.help {
+.search-input {
+  padding-bottom: 6px 4px;
+  border: 0;
   border-bottom: 1px solid #333;
-  padding-bottom: 4px;
   opacity: 0.8;
+  text-align: center;
+
 }
 .help:hover {
   border-bottom: none;
