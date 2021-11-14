@@ -18,6 +18,10 @@
     url('../fonts/roboto-v29-latin-700.woff') format('woff');
   font-display: swap;
 }
+:root {
+  --main-color: #EA625C;
+  --text-color: #333;
+}
 html {
   box-sizing: border-box;
   height: 100%;
@@ -29,7 +33,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -54,7 +57,7 @@ li {
   list-style: none;
 }
 *:focus {
-  outline: 2px dashed #7296EC;
+  outline: 2px dashed var(--main-color);
   outline-offset: 3px;
 }
 .visually-hidden {
@@ -80,7 +83,7 @@ li {
   line-height: 150%;
 }
 .btn {
-  background-color: #EA625C;
+  background-color: var(--main-color);
   padding: 12px 39px;
   color: #fff;
   text-transform: uppercase;
@@ -93,7 +96,6 @@ li {
 .header-section {
   width: 1250px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 80px;
@@ -104,6 +106,13 @@ li {
 }
 .logo-img {
   display: block;
+  width: 35px;
+  height: 42px;
+  object-fit: contain;
+}
+.navbar {
+  margin-left: auto;
+  margin-right: 40px;
 }
 .nav-list {
   display: flex;
@@ -112,24 +121,25 @@ li {
 .nav-item {
   font-size: 15px;
   line-height: 150%;
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 3px;
 }
 .nav-link {
-  color: #333;
+  color: var(--text-color);
 }
 .search-input {
-  padding-bottom: 6px 4px;
+  padding: 6px 6px;
   border: 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--text-color);
   opacity: 0.8;
-  text-align: center;
-
 }
 .help:hover {
   border-bottom: none;
 }
 .nav-link:hover {
   padding-bottom: 4px;
-  border-bottom: 3px solid #333;
+  border-bottom: 3px solid var(--text-color);
 }
 .nav-item:not(:last-child) {
   margin-right: 30px;
@@ -188,7 +198,7 @@ li {
 }
 .feature-text {
   margin-bottom: 20px;
-  color: #333;
+  color: var(--text-color);
   font-size: 15px;
   line-height: 24px;
 }
@@ -207,15 +217,15 @@ li {
 }
 .hr-line {
   width: 40px;
-  border: 1px solid #EA625C;
+  border: 1px solid var(--main-color);
   margin-right: 10px;
-  background-color: #EA625C;
+  background-color: var(--main-color);
 }
 .learn-more {
   font-weight: bold;
   line-height: 160%;
   text-transform: uppercase;
-  color: #EA625C;
+  color: var(--main-color);
 }
 .info-section {
   padding-top: 70px;
